@@ -35,3 +35,13 @@ body {
   right: 2px;
   top: 44%;
 }
+.btn-up {
+  position: absolute;
+  right: 44%;
+  top: 2px;
+}
+.btn-down {
+  position: absolute;
+  bottom: 2px;
+  left: 44%;
+}
