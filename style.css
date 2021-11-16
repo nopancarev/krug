@@ -1,0 +1,32 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgray;
+}
+.container {
+  text-align: center;
+}
+#circle {
+  background-color: rgb(82, 113, 197);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.margin-bottom {
+  margin-bottom: 40px;
+}
+.margin-top {
+  margin-top: 40px;
+}
+.btn {
+  background-color: rgb(230, 172, 66);
+  padding: 10px;
+  font-size: large;
+}
