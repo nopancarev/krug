@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,22 +13,22 @@
 </head>
 
 <body>
-  <!-- 
-    1 napraviti krug na sredini ekrana
-    2 napraviti dva dugmeta levo i desno
-    3 kad se klikne levo,krug se pomera za 10 px i obrnuto
-  -->
-
-
   <div class="container">
     <div id="circle">
-      <button class="btn btn-left" onclick="moveLeft()"><i class="fas fa-angle-left"></i></button>
-      <button class="btn btn-right" onclick="moveRight()"><i class="fas fa-angle-right"></i></button>
-      <button class="btn btn-up"><i class="fas fa-angle-up"></i></button>
-      <button class="btn btn-down"><i class="fas fa-angle-down"></i></button>
+      <button class="btn btn-left" onclick="moveLeft()">
+        <i class="fas fa-angle-left"></i>
+      </button>
+      <button class="btn btn-right" onclick="moveRight()">
+        <i class="fas fa-angle-right"></i>
+      </button>
+      <button class="btn btn-up" onclick="moveUp()">
+        <i class="fas fa-angle-up"></i>
+      </button>
+      <button class="btn btn-down" onclick="moveDown()">
+        <i class="fas fa-angle-down"></i>
+      </button>
     </div>
   </div>
-
 
   <script src="main.js"></script>
 </body>
