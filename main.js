@@ -1,28 +1,30 @@
 var left = 0;
 var up = 0;
+var circle = $('#circle');
 
 function moveLeft() {
   left = left - 10;
-  document.getElementById('circle').style.marginLeft = left + 'px';
+  circle.css("marginLeft", left);
 }
 function moveRight() {
   left = left + 10;
-  document.getElementById('circle').style.marginLeft = left + 'px';
+  circle.css('marginLeft', left);
 }
 function moveUp() {
   up = up - 10;
-  document.getElementById('circle').style.marginTop = up + 'px';
+  circle.css('marginTop', up);
 }
 function moveDown() {
   up = up + 10;
-  document.getElementById('circle').style.marginTop = up + 'px';
+  circle.css('marginTop', up);
 }
 
-document.getElementById("btnLeft").addEventListener("click", moveLeft);
-document.getElementById("btnRight").addEventListener("click", moveRight);
-document.getElementById("btnUp").addEventListener("click", moveUp);
-document.getElementById("btnDown").addEventListener("click", moveDown);
-document.addEventListener("keydown", function (event) {
+$('#btnLeft').on('click', moveLeft);
+$('#btnRight').on('click', moveRight);
+$('#btnUp').on('click', moveUp);
+$('#btnDown').on('click', moveDown);
+
+$(document).on('keydown', function (event) {
   if (event.key === 'ArrowLeft') {
     moveLeft()
   }
@@ -35,4 +37,4 @@ document.addEventListener("keydown", function (event) {
   if (event.key === 'ArrowDown') {
     moveDown()
   }
-}, true)
+})
